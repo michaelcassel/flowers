@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" typew="text/css" href="./main.css"/>
     <title>Document</title>
 </head>
 <body>
-    Testing...
+    <div id="main">
+        <div id="main-text">
+        <h1>♡ I'M SORRY ♡</h1>
+        <p style="font-size: 30px">Vy,</p>
+        <p>I want to sincerley apologize for blanking on your favorite food last night.</p>
+        <p>The MOST special thing about being in a relationship with someone is having the opportunity to learn more about them on a personal level. Everything that comes with dating someone (shared experiences, conversations, trust, etc.) are all built on the strong and intimate bond that is formed when both people know and appreciate each other a lot.
+            I believe this is because how much you care for someone is directly tied to how much you know about them, since you could only truly care about somebody once you fully understand them.
+        </p>
+        <p>I made you a flower, and I hope you feel better!</p>
+        <p style="font-size: 16px">Side Note: I heard <a href="https://shiros.com/" target="test">Shiro's</a> has REALLY good sushi...</p>
+    </div>
+    <div style="height: 100px"></div>
+    <div id="flowers">
+        <div id="petals"></div>
+        <div style="height: 50px"></div>
+        <div id="stem"></div>
+        <div id="pot"></div>
+    </div>
+    <script>
+            let html = ""
+            for (let i = 0; i < 10; i++) {
+                color = i % 2 === 0 ? "#ededed" : "#e592f7"
+                html += `<div class="petal" style="background-color: ${color}; transform: rotate(${i * 36 + 20}deg); transform-origin: top"></div>`
+            }
+
+            html += `<div style="margin-left: -15px; top: -15px; height: 130px; width: 130px; clip-path: circle(closest-side); background-color: #dbd44d; position: absolute; z-index: 15"></div>`
+
+            document.getElementById("petals").innerHTML = html;
+    </script>
+    </div>
 </body>
 </html>

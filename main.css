@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+#main-text {
+    margin-top: 100px;
+    padding: 50px 100px;
+    max-width: 800px;
+    width: fit-content;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    border-width: 30px;
+    background-color: rgb(233, 162, 233);
+    border-color: aliceblue;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family:  "Emilys Candy", serif;
+}
+
+#main {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%
+}
+
+#flowers {
+    margin-top: 150px;
+    width: 320px;
+    justify-self: center;
+}
+
+#pot {
+    justify-self: center;
+    background-color: rgb(136, 84, 5);
+    width: 125px;
+    height: 150px;
+    clip-path: polygon(100% 0%, 100% 15%, 85% 100%, 15% 100%, 0% 15%, 0% 0%);
+}
+
+#stem {
+    justify-self: center;
+    background-color: rgb(4, 59, 29);
+    width: 15px;
+    height: 300px;
+}
+
+.petal {
+    justify-self: center;
+    margin-top: 50px;
+    width: 80px;
+    height: 160px;
+    position: absolute;
+    clip-path: ellipse(50% 100% at top);
+}
+
+#petals {
+    position: absolute;
+    justify-self: center;
+    height: 100px;
+    width: 100px;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
