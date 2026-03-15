@@ -15,7 +15,6 @@ p {
 }
 
 #main-text {
-    margin-top: 100px;
     padding: 50px 100px;
     max-width: 800px;
     width: fit-content;
@@ -42,7 +41,7 @@ h1 {
 }
 
 #flowers {
-    margin-top: 150px;
+    margin-top: 300px;
     width: 320px;
     justify-self: center;
 }
