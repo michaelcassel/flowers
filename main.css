@@ -1,8 +1,8 @@
 body {
     background-color: rgb(61, 61, 61);
     width: 100%;
+    min-height: 100vh;
     display: flex;
-    height: 100vh;
     margin: 0px;
 }
 
@@ -11,7 +11,7 @@ a {
 }
 
 p {
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 #main-text {
@@ -28,7 +28,7 @@ p {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 2.5rem;
     font-family:  "Emilys Candy", serif;
 }
 
@@ -41,7 +41,7 @@ h1 {
 }
 
 #flowers {
-    margin-top: 300px;
+    margin-top: 10rem;
     width: 320px;
     justify-self: center;
 }
